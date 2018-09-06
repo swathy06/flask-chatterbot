@@ -50,7 +50,7 @@ english_bot = ChatBot("GUI Bot", read_only=True,
 		filters=['chatterbot.filters.RepetitiveResponseFilter'],
         database="database3"
       )
-
+'''
 @app.route('/from')
 #if app.route('/get')
 def get_bot_response():
@@ -117,9 +117,7 @@ def get_bot_response():
             speech = 'Your bmi is {} and you are {} So your ideal weight  should be {}kg and you have to reduce {}kg'.format(bmi, a, i,r)
             return str(speech)
        # bmi1 = 'Your bmi is {}'.format(bmi)
-    '''else:
-          speech = 'you have to enter two values'
-          return str(speech)'''
+    
     #elif not lot:
     #print (lot)
     #elif not lot:
@@ -136,6 +134,7 @@ def get_bot_response():
      #   print(789)
        # response = 'enter weight(kg) and height(cm)'
         #return str(response)
+	'''
 @app.route('/')
 def home():
     #a = make_response(render_template("index.html"))
