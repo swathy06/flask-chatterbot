@@ -1,2 +1,2 @@
 Flask==0.12.1
-chatterbot==0.87
+chatterbot==0.8.7
