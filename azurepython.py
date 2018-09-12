@@ -50,7 +50,7 @@ english_bot = ChatBot("GUI Bot", read_only=True,
 		filters=['chatterbot.filters.RepetitiveResponseFilter'],
         database="database3"
       )
-'''
+
 @app.route('/get')
 def get_bot_response():
     userText = request.args.get('msg')
@@ -133,10 +133,9 @@ def get_bot_response():
      #   print(789)
        # response = 'enter weight(kg) and height(cm)'
         #return str(response)
-	'''
+	
 @app.route('/')
 def home():
-    #a = make_response(render_template("index.html"))
     return render_template("index.html")
 
 
