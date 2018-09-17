@@ -48,7 +48,7 @@ english_bot = ChatBot("GUI Bot", read_only=True,
 		input_adapter="chatterbot.input.VariableInputTypeAdapter",
         output_adapter="chatterbot.output.OutputAdapter",
 		filters=['chatterbot.filters.RepetitiveResponseFilter'],
-        database="database3"
+        database="database4"
       )
 
 @app.route('/')
