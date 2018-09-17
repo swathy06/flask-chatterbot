@@ -51,6 +51,10 @@ english_bot = ChatBot("GUI Bot", read_only=True,
         database="database3"
       )
 
+@app.route('/')
+def home():
+    return render_template("index.html")
+
 @app.route('/get')
 def get_bot_response():
     userText = request.args.get('msg')
@@ -134,9 +138,6 @@ def get_bot_response():
        # response = 'enter weight(kg) and height(cm)'
         #return str(response)
 	
-@app.route('/')
-def home():
-    return render_template("index.html")
 
 
 
