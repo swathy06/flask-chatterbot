@@ -21,7 +21,7 @@ def hello_world():
 #@app.route('/',methods = ['GET'])
 #def home():
 def get_bot_response():
-    with open('outputEis.txt', 'a') as f:
+    with open('user.txt', 'a') as f:
         userText = request.args.get('msg')
         print(userText, file=f)
         f.close()
