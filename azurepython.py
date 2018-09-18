@@ -50,9 +50,9 @@ def get_bot_response():
     #z = y.lower() #to lower the alphabet
     #print (y)
     k = "bmi"
-    print (k)
+    #print (k)
     if any(word in k for word in texts):
-        print(123)
+        #print(123)
         response = 'enter weight(kg) and height(cm)'
         return str(response)
 
