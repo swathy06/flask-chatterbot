@@ -52,8 +52,8 @@ english_bot = ChatBot("GUI Bot", read_only=True,
       )
 
 @app.route('/')
-def home():
-    return 'I am running'
+def hello_world():
+  return 'Hey its Python Flask application Running!'
     #return render_template("index.html")
 
 if __name__ == "__main__":
