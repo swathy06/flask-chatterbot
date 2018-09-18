@@ -12,7 +12,6 @@ from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import re
 from flask import make_response
-app = Flask(__name__)
 english_bot = ChatBot("GUI Bot", read_only=True, preprocessors=['chatterbot.preprocessors.clean_whitespace'], logic_adapters=[
 	{
   'import_path': 'chatterbot.logic.BestMatch',
@@ -32,6 +31,8 @@ english_bot = ChatBot("GUI Bot", read_only=True, preprocessors=['chatterbot.prep
                 output_adapter="chatterbot.output.OutputAdapter",
                 database="db.sqlite3"
       )
+app = Flask(__name__)
+
 @app.route('/')
 def hello_world():
     return render_template("index.html")
