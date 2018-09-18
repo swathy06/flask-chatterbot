@@ -92,10 +92,10 @@ def get_bot_response():
     #elif not lot:
     if any(word in k for word in y):
         print(456)
-    if userText.strip()!='bmi':
+    #if userText.strip()!='bmi':
              #return str(english_bot.get_response(userText))
-             speech ='{}' .format(english_bot.get_response(userText))
-             return str(speech)
+             #speech ='{}' .format(english_bot.get_response(userText))
+             #return str(speech)
 
     #elif  userText.strip()=='bmi':
     #elif  userText.strip()=='bmi':
