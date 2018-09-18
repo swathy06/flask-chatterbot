@@ -53,8 +53,9 @@ english_bot = ChatBot("GUI Bot", read_only=True,
 
 @app.route('/')
 def home():
-    return render_template("index.html")
-
+    return 'I am running'
+    #return render_template("index.html")
+'''
 @app.route('/get')
 def get_bot_response():
     userText = request.args.get('msg')
@@ -139,7 +140,7 @@ def get_bot_response():
         #return str(response)
 	
 
-
+'''
 
 if __name__ == "__main__":
     app.run()
