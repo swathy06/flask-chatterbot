@@ -40,7 +40,11 @@ def hello_world():
 #@app.route('/',methods = ['GET'])
 #def home():
 def get_bot_response():
-    userText = request.args.get('msg')
+    with open('user.txt', 'a') as f:
+        	userText = request.args.get('msg')
+        	print(userText, file=f)
+        	f.close()
+    #userText = request.args.get('msg')
     lot = re.findall('\d+', userText)
     # print(lot)
     y = userText.split()
