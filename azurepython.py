@@ -26,10 +26,10 @@ english_bot = ChatBot("GUI Bot", read_only=True, preprocessors=['chatterbot.prep
         'default_response': 'I am sorry, but I do not understand.'
         }
         ],
-		storage_adapter="chatterbot.storage.SQLStorageAdapter",
+		storage_adapter="chatterbot.storage.MongoDatabaseAdapter",
 		input_adapter="chatterbot.input.VariableInputTypeAdapter",
                 output_adapter="chatterbot.output.OutputAdapter",
-                database="db.sqlite3"
+                database="database1"
       )
 app = Flask(__name__)
 
